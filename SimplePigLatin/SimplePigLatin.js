@@ -6,5 +6,5 @@ function pigIt(str){
     return result.join(' ');
 }
 
-console.log(pigIt('Pig latin is cool !'))
+console.log(pigIt('Hello World !'))
 
