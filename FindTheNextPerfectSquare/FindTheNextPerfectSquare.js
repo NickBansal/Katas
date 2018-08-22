@@ -4,4 +4,4 @@ function findNextSquare(sq) {
 }
 
 
-console.log(findNextSquare(120))
+console.log(findNextSquare(80))
