@@ -8,7 +8,7 @@ function uniqueInOrder(iterable){
 			} 
 		}
 		return result;
-	} else if (typeof iterable[0] === 'number') {
+	} else if (typeof iterable[0] === 'number' || typeof iterable[0] === 'string') {
 		var result = [iterable[0]]
 		for (let i=1; i<iterable.length; i++) {
 			if (iterable[i] !== iterable[i-1]) {
