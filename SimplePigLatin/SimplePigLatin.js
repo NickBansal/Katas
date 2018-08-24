@@ -1,9 +1,5 @@
 function pigIt(str){
-	var result = []
-    str.split(' ').forEach((e) => {
-    	(e.match(/\W/g)) ? result.push(e) : result.push((`${e}${e[0]}ay`).substr(1))
-    })
-    return result.join(' ');
+	return str.split(' ').map(x => (x.match(/\W/g)) ? x : (`${x}${x[0]}ay`).substr(1)).join(' ')
 }
 
 console.log(pigIt('Hello World !'))
